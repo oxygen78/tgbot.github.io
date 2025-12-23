@@ -11,6 +11,11 @@
 
   <script>
     const tg = window.Telegram.WebApp;
+    const user = tg.initDataUnsafe.user;
+
+    const p = document.createElement("p");
+    p.textContent = "Текст, созданный JavaScript";
+    document.body.appendChild(p);
 
     tg.expand(); // разворачивает приложение
 
@@ -18,7 +23,6 @@
       tg.sendData("Привет от Mini App");
     }
 
-    const tg = window.Telegram.WebApp;
     console.log(tg.initDataUnsafe.user);
 
   </script>
