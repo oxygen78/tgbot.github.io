@@ -17,6 +17,10 @@
     function sendData() {
       tg.sendData("Привет от Mini App");
     }
+
+    const tg = window.Telegram.WebApp;
+    console.log(tg.initDataUnsafe.user);
+
   </script>
 </body>
 </html>
